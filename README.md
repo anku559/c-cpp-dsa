@@ -1,2 +1,1 @@
-# c-cpp-dsa
-C and C++ Cheatsheet for Data Structure and Algorithms
+# C and CPP (Data Structures and Algorithms)
