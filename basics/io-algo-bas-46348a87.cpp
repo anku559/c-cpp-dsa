@@ -38,14 +38,14 @@ int sumNNaturalNumber(int number) {
   return (number * (number + 1)) / 2;
 }
 
-/**
- * Formula - (-b +|- sqrt(b^2 - 4ac)) / (2*a)
- */
 struct Roots {
   float root1;
   float root2;
 };
 
+/**
+ * Formula - (-b +|- sqrt(b^2 - 4ac)) / (2*a)
+ */
 Roots rootQuadraticEquation(float a, float b, float c) {
   float discriminant = (b * b) - (4 * a * c);
   Roots roots;
@@ -65,11 +65,20 @@ Roots rootQuadraticEquation(float a, float b, float c) {
   return roots;
 }
 
+/**
+ * Formula - s (displacement) = ((v * v) - (u * u)) / (2*a)
+ */
+float findSpeed(float initVelocity, float finalVelocity, float acceleration) {
+  return ((finalVelocity * finalVelocity) - (initVelocity * initVelocity)) / (2 * acceleration);
+}
+
 int main() {
   /*
   Roots eq = rootQuadraticEquation(1, -3, 2);  // x^2 - 3x + 2 = 0 => (x-1)(x-2) => roots: 1, 2
   cout << eq.root1;
   cout << eq.root2;
+
+  cout << findSpeed(10, 40, 3);
   */
 
   return 0;
