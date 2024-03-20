@@ -72,6 +72,31 @@ float findSpeed(float initVelocity, float finalVelocity, float acceleration) {
   return ((finalVelocity * finalVelocity) - (initVelocity * initVelocity)) / (2 * acceleration);
 }
 
+/**
+ * Formula - (p * r * t) / 100
+ * Rate - in percentage
+ * Time - in years
+ */
+float calculateSimpleInterest(float principal, float rate, float time) {
+  return (principal * rate * time) / 100.0;
+}
+
+/**
+ * Formula - p * (1 + (r / 100) ^ t)
+ * Rate - in percentage
+ * Time - in years
+ */
+float calculateCompoundInterest(float principal, float rate, int time) {
+  // Rate to a decimal
+  float rateDecimal = rate / 100.0;
+
+  // Amount after interest
+  float amount = principal * (pow((1 + rateDecimal), time));
+  float compoundInterest = amount - principal;
+
+  return compoundInterest;
+}
+
 int main() {
   /*
   Roots eq = rootQuadraticEquation(1, -3, 2);  // x^2 - 3x + 2 = 0 => (x-1)(x-2) => roots: 1, 2
@@ -79,6 +104,10 @@ int main() {
   cout << eq.root2;
 
   cout << findSpeed(10, 40, 3);
+
+  cout << calculateSimpleInterest(50000, 8, 1);
+
+  cout << calculateCompoundInterest(50000, 8, 2);
   */
 
   return 0;
