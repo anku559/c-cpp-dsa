@@ -50,6 +50,12 @@ Roots rootQuadraticEquation(float a, float b, float c) {
   float discriminant = (b * b) - (4 * a * c);
   Roots roots;
 
+  /*
+    if discriminant = 0, roots are real and equal
+    if discriminant > 0, roots are real and unequal
+    if discriminant < 0, roots are imaginary
+  */
+
   if (a == 0) {
     // If a is zero, it's not a quadratic equation
     roots.root1 = roots.root2 = NAN;  // Not a Number (indicating undefined)
