@@ -30,9 +30,9 @@ using namespace std;
 string checkLeapYear(int year) {
   string output = to_string(year);
 
-  if (year % 4 == 0) {
-    if (year % 100 == 0) {
-      if (year % 400 == 0) {
+  if (year % 4 == 0) {        // Leap years are divisible by 4
+    if (year % 100 == 0) {    // Except for years that are divisible by 100
+      if (year % 400 == 0) {  // Unless they are also divisible by 400
         output += " is a leap year";
       } else {
         output += " is not a leap year";
