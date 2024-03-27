@@ -4,23 +4,6 @@
 Write a CPP program to print multiplication table of the number n?
 */
 
-/* Examples and Constraints
-
-====================== [Example 1] ======================
-Inputs -
-Expected Output -
-
-====================== [Example 2] ======================
-Inputs -
-Expected Output -
-
-====================== [Example 3] ======================
-Inputs -
-Expected Output -
-
-===================== [Constraints] =====================
-*/
-
 #include <iostream>
 #include <stdexcept>
 
