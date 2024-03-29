@@ -32,13 +32,18 @@ Expected Output - 1, 2, 4, 5, 10, 20, 25, 50, 100
 using namespace std;
 
 void factorsOfNumbers(unsigned int n) {
+  int sumFactors = 0;
+
   for (unsigned int i = 1; i <= n; i++) {
     if (n % i != 0) {
       continue;
     } else {
+      sumFactors += i;
       cout << i << endl;
     }
   }
+
+  cout << "Factors Sum: " << sumFactors << endl;
 
   /*
   Time Complexity and Cases (factorsOfNumbers)
