@@ -95,6 +95,25 @@ bool checkPrime(int n) {
   return true;
 }
 
+
+// [Another Way] - By maintaining count
+
+{
+  int n, count = 0;
+  cout << "Enter number: ";
+  cin >> n;
+
+  for (int i = 1; i <= n; i++) {
+    if (n % i == 0)
+      count++;
+  }
+
+  if (count == 2) {
+    cout << "Prime Number";
+  } else {
+    cout << "Not a Prime Number";
+  }
+}
 */
 
 // Execute - g++ .\numbers\io-algo-num-d148f8b5.cpp -o .\output.exe; .\output.exe
