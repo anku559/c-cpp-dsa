@@ -48,11 +48,15 @@ Function `displayDigitsReverse`: `num` => `void`
  */
 void displayDigitsReverse(int num) {
   int numCopy = num;
+  int sum = 0;
   while (numCopy > 0) {
     int digit = numCopy % 10;
     numCopy /= 10;
+    sum += digit;
     cout << digit << endl;
+    // cout << sum << endl;
   }
+  cout << "Sum: " << sum << endl;
 }
 
 int main() {
