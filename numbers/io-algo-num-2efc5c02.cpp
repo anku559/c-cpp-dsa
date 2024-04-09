@@ -1,5 +1,5 @@
 /*
-[io-algo-num-2efc5c02] [Digit Display Reverse	]
+[io-algo-num-2efc5c02] [Digit Display Reverse]
 
 Write a CPP program to display digits of number in reverse order?
 */
