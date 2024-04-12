@@ -34,8 +34,8 @@ struct LargestSmallest {
 
 LargestSmallest findInIntArray(int arr[], int size) {
   LargestSmallest output;
-  int largest = arr[0];
-  int smallest = arr[0];
+  int largest = INT_MIN;
+  int smallest = INT_MAX;
 
   for (int i = 0; i < size; i++) {
     if (arr[i] > largest) {
