@@ -27,9 +27,12 @@ Expected Output
 using namespace std;
 
 void decrementPattern(int n) {
+  // int num = 1;
   for (int i = n; i >= 1; i--) {
     for (int j = i; j >= 1; j--) {
-      cout << "*";
+      cout << "* ";
+      // cout << num << " ";
+      // num += 1;
     }
     cout << endl;
   }
@@ -45,12 +48,3 @@ int main() {
 }
 
 // Execute - g++ .\patterns\io-algo-pat-72ca7f4b.cpp -o .\output.exe; .\output.exe
-
-/**
-Function `fnName`: `param` => `void`
-- param: int
-
-#### Worst Case Scenarios
-#### Average Case Scenarios
-#### Best Case Scenarios
-*/
