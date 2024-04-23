@@ -14,6 +14,11 @@ Why 1 is not Prime Number?
 - Since 1 has less than two factors, it is not a prime number.
 
 Mental Model - Dividing number by all the smaller numbers and check if it is divided by 1 and itself
+
+Approach 2 - Square Root
+int sqrtNum = sqrt(num);
+i = 2; i <= sqrtNum;
+- If num is divisible by any number between 2 and its square root, it's not prime
  */
 
 /* Examples and Constraints
